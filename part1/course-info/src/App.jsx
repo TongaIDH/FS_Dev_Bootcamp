@@ -23,11 +23,9 @@ const Content = (props) => {
 
 const Part = (props) => {
   return (
-    <div>
-      <p>
-        The class name is: {props.part} and it contains {props.exercises} exercises
-      </p>
-    </div>
+    <p>
+      The class name is: {props.part} and it contains {props.exercises} exercises
+    </p>
   )
 }
 
@@ -38,9 +36,7 @@ const Total = (props) => {
   
   return (
     <div>
-      <p>
         The total amount is: {total}
-      </p>
     </div>
   )
 }
