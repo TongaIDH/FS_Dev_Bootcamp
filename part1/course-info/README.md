@@ -13,8 +13,8 @@ Currently, two official plugins are available:
 - git checkout -b "FSB/PartN"
 - git checkout -b "FSB/PartN-FeatureX" 
 
-- git commit -m "GastonGarcia/PartN-ExerciseX"
-- git commit -m "GastonGarcia/PartN-FeatureX-ExcerciseY"
+- git commit -m "GastonGarcia/PartN-Exercises(X)"
+- git commit -m "GastonGarcia/PartN-FeatureX-Finished"
 
 # Checks for merging to Master branch
 
@@ -22,4 +22,4 @@ Currently, two official plugins are available:
 - Previous exercises should remain up to date and with no changes.
 - Clear and concise naming on branches and commits. 
     - If necessary, move the changes to a new branch and delete the older one. 
-    - In case of commits, revert commit and create a new commit.
+    - In case of commits, revert the  given commit and create a new commit.

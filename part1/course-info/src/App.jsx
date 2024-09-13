@@ -11,7 +11,6 @@ const Header = (props) => {
 const Content = (props) => {
   
   const classes = props.parts.map(e => 
-    // console.log(props.parts.indexOf(e) + " + " + e.part + " + " + e.exercises)
     <Part key={props.parts.indexOf(e)} part={e.part} exercises={e.exercises}/>
   )
 
@@ -47,18 +46,20 @@ const Total = (props) => {
 }
 
 const App = () => {
-  const course = 'Half Stack application development'
-  const parts = [
-    { part: 'Fundamentals of React', exercises: 10 },
-    { part: 'Using props to pass data', exercises: 7 },
-    { part: 'State of a component', exercises: 14 },
-  ]
+  const course = {
+    name: 'Half Stack application development',
+    parts: [
+      { part: 'Fundamentals of React', exercises: 10 },
+      { part: 'Using props to pass data', exercises: 7 },
+      { part: 'State of a component', exercises: 14 },
+    ]
+  }
 
   return (
     <div>
-      <Header course={course} />
-      <Content parts={parts} />
-      <Total total={parts} />
+      <Header course={course.name} />
+      <Content parts={course.parts} />
+      <Total total={course.parts} />
     </div>
   )
 }
